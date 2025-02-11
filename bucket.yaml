@@ -1,0 +1,9 @@
+apiVersion: s3.aws.upbound.io/v1beta1
+kind: Bucket
+metadata:
+  name: my-s3-bucket
+spec:
+  providerConfigRef:
+    name: aws-provider
+  forProvider:
+    region: us-west-1
